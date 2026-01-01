@@ -4,13 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mytools</title>
+    <title>My Tools</title>
   </head>
-  <body>
-    <!-- <div id="app"></div> -->
-    <script type="module" src="/src/main.js"></script>
-    <body class="bg-gray-100 min-h-screen flex items-center justify-center">
-      <div class="bg-white p-6 rounded-xl shadow">Tailwind OK</div>
-    </body>
+  <body class="h-screen overflow-hidden">
+    <!-- <body class="bg-red-500"></body> -->
+    <div id="app" class="flex h-full">
+      <!-- 左侧工具栏 -->
+      <aside class="w-64 bg-gray-900 text-white p-4">
+        <h1 class="text-xl font-bold mb-4">🧰 Tools</h1>
+        <ul class="space-y-2">
+          <li class="cursor-pointer hover:text-blue-400">Barcode Generator</li>
+          <li class="cursor-pointer hover:text-blue-400">QR Code</li>
+        </ul>
+      </aside>
+
+      <!-- 右侧内容区 -->
+      <main class="flex-1 bg-gray-100 p-6">
+        <h2 class="text-2xl font-semibold">Welcome</h2>
+        <p class="text-gray-600 mt-2">Select a tool from the left.</p>
+      </main>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>

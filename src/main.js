@@ -1,24 +1,27 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import "./style.css";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
+const app = document.querySelector("#app");
+
+app.innerHTML = `
+  <div class="flex h-screen overflow-hidden">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-900 text-white p-4">
+      <h1 class="text-xl font-bold mb-4">🧰 Tools</h1>
+
+      <ul class="space-y-2">
+        <li class="cursor-pointer rounded px-2 py-1 hover:bg-gray-800 hover:text-blue-300">
+          Barcode Generator
+        </li>
+        <li class="cursor-pointer rounded px-2 py-1 hover:bg-gray-800 hover:text-blue-300">
+          QR Code
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main -->
+    <main class="flex-1 bg-gray-100 p-6">
+      <h2 class="text-2xl font-semibold">Welcome</h2>
+      <p class="text-gray-600 mt-2">Select a tool from the left.</p>
+    </main>
   </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+`;
