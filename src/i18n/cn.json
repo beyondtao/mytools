@@ -1,0 +1,7 @@
+{
+  "app.title": "工具箱",
+  "nav.barcode": "条码生成器",
+  "nav.qrcode": "二维码",
+  "welcome.title": "欢迎",
+  "welcome.tip": "请从左侧选择一个工具。"
+}

@@ -1,5 +1,7 @@
 {
-  "title": "My Tools",
-  "welcome": "Welcome",
-  "selectTool": "Select a tool from the left."
+  "app.title": "Tools",
+  "nav.barcode": "Barcode Generator",
+  "nav.qrcode": "QR Code",
+  "welcome.title": "Welcome",
+  "welcome.tip": "Select a tool from the left."
 }

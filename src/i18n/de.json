@@ -1,0 +1,7 @@
+{
+  "app.title": "Werkzeuge",
+  "nav.barcode": "Barcode-Generator",
+  "nav.qrcode": "QR-Code",
+  "welcome.title": "Willkommen",
+  "welcome.tip": "Bitte wählen Sie links ein Werkzeug aus."
+}
